@@ -1,0 +1,141 @@
+/* General styling */
+body {
+  font-family: 'Verdana';
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox for proper alignment */
+.grid {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Side component styling */
+.side-component {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.side-component button {
+  background-color: #495057;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.side-component img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.side-component button:hover {
+  background-color: #6c757d;
+}
+
+.side-component p {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Main form styling */
+form {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 3;
+  max-width: 100%;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: list-item;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  color: #333333;
+}
+
+/* Stylish input and textarea styling */
+input[type="text"],
+textarea {
+  height: 250px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 25px; /* Increase padding for larger input fields */
+  background: linear-gradient(to top left, #f9f9f9, #eaeaea);
+  font-size: 18px; /* Increase font size for better readability */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+  height: 200px; /* Adjust height as needed */
+  background: linear-gradient(to top left, #f9f9f9, #eaeaea);
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  width: 50%;
+  padding: 14px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  margin-left:150px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Additional text styling */
+.text-center p {
+  font-size: 18px;
+  color: #333333;
+}
+
+.text-lg {
+  font-size: 24px;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 10px;
+}
